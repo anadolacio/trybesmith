@@ -12,7 +12,7 @@ async function createProduct(
 async function getAllProducts(): Promise<ServiceResponse<ProductSequelizeModel[]>> {
   const allProducts = await ProductModel.findAll();
 
-  return { status: 'SUCCESSFUL', data: allProducts };
+  return { status: 'SUCCESS', data: allProducts };
 }
 
 export default {

@@ -1,5 +1,5 @@
 export type ServiceResponseErrorType = 'UNAUTHORIZED' | 'NOT_FOUND' | 'INVALID_DATA';
-export type ServiceResponseSuccessType = 'SUCCESSFUL' | 'CREATED';
+export type ServiceResponseSuccessType = 'SUCCESS' | 'CREATED';
 
 export type ServiceResponseError = {
   status: ServiceResponseErrorType,
