@@ -4,6 +4,7 @@ import mapStatusHTTP from '../utils/mapStatusHttp';
 
 async function createProduct(req: Request, res: Response): Promise<Response> {
   const { name, price, orderId } = req.body;
+  // console.log('NOME', name);
 
   const product = await productService.createProduct({ name, price, orderId });
 

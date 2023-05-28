@@ -9,6 +9,7 @@ function mapStatusHTTP(
     CREATED: 201,
     INVALID_DATA: 400,
     UNAUTHORIZED: 401,
+    INCOMPLETE_DATA: 422,
   };
 
   return statusHTTPMap[type] || 500;
